@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Model</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- <link rel="icon" type="logo.png" href="logo.png"> -->
+
+    <style>
+        body {background-image: linear-gradient(to right, #4257CF , #C650C1);
+            display: flex;
+            align-items:center;
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif;
+        }
+        header{
+            margin: 150px;
+            padding: 50px;
+            background-color:#ffffff;
+            border-radius: 15px;
+        }
+        h1   {color: #343434}
+        h3    {color: red;}
+        h4    {color:#343434}
+
+        input[type=number], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 0px 0;
+            display: inline-block;
+            border: 1px solid #000000;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #45a049;
+          }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="D:\AIML\gpu project\logo.png" alt="This is an image" srcset="">x` -->
+    <header>
+        <h1>Predict the Memory Size of any Year</h1>
+        <p>
+            Enter The Year of Prediction
+        </p>
+        <form action="/" method="post">
+            <input type="number" name="Yer" id="Year">
+            <input type="submit">
+        </form>
+        <p>The predicted memory is: </p>
+    {{ pred_memory }} <span>GB</span>
+
+</header>
+</body>
+</html>
